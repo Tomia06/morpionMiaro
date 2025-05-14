@@ -2,8 +2,8 @@
 // faire un compteur de points
 // faire un bouton démarrer la partie
 // pouvoir choisir entre rond et croix
-// a la fin écrire le gagnant et incrémenter 1 au gagnant
-// pouvoir reset les scores
+// A la fin écrire le gagnant et incrémenter 1 au gagnant
+// Pouvoir reset les scores
 
 const caseMorpion = document.querySelectorAll('.caseMorpion');
 
@@ -20,8 +20,8 @@ const case9 = caseMorpion[8];
 
 console.log(caseMorpion);
 
-let j = 1
-
+let j = 1;
+let score = 0
 caseMorpion.forEach((element) => {
     element.addEventListener('click', () => {
         if (element.classList.contains('croix') === false && element.classList.contains('rond') === false) {
@@ -33,48 +33,108 @@ caseMorpion.forEach((element) => {
                 j = j * -1
             }
             winCheck();
+            score++
+            egalcheck();
+            
         }
     });
 
 })
 
 // condition de win
-
+// role : Afficher si le joueur à gagner
+// paramtre : rien
+// return : rien
 function winCheck() {
+    // croix
     if (case1.classList.contains('croix') === true && case2.classList.contains('croix') === true && case3.classList.contains('croix') === true) {
-        alert("t'as gagné!")
-    } else if (case1.classList.contains('croix') === true && case4.classList.contains('croix') === true && case7.classList.contains('croix') === true) {
-        alert("t'as gagné!")
-    } else if (case2.classList.contains('croix') === true && case5.classList.contains('croix') === true && case8.classList.contains('croix') === true) {
-        alert("t'as gagné!")
-    } else if (case3.classList.contains('croix') === true && case6.classList.contains('croix') === true && case9.classList.contains('croix') === true) {
-        alert("t'as gagné!")
-    } else if (case4.classList.contains('croix') === true && case5.classList.contains('croix') === true && case6.classList.contains('croix') === true) {
-        alert("t'as gagné!")
-    } else if (case7.classList.contains('croix') === true && case8.classList.contains('croix') === true && case9.classList.contains('croix') === true) {
-        alert("t'as gagné!")
-    } else if (case1.classList.contains('croix') === true && case5.classList.contains('croix') === true && case9.classList.contains('croix') === true) {
-        alert("t'as gagné!")
-    } else if (case3.classList.contains('croix') === true && case5.classList.contains('croix') === true && case7.classList.contains('croix') === true) {
-        alert("t'as gagné!")
+        setTimeout(() => {
+        alert("Vous avez gagné");
+        }, 1000);
+        
+    } 
+    else if (case1.classList.contains('croix') === true && case4.classList.contains('croix') === true && case7.classList.contains('croix') === true) {
+    setTimeout(() => {
+        alert("Vous avez gagné");
+        }, 1000);
+    } 
+    else if (case2.classList.contains('croix') === true && case5.classList.contains('croix') === true && case8.classList.contains('croix') === true) {
+        setTimeout(() => {
+        alert("Vous avez gagné");
+        }, 1000);
+    } 
+    else if (case3.classList.contains('croix') === true && case6.classList.contains('croix') === true && case9.classList.contains('croix') === true) {
+        setTimeout(() => {
+        alert("Vous avez gagné");
+        }, 1000);
+    } 
+    else if (case4.classList.contains('croix') === true && case5.classList.contains('croix') === true && case6.classList.contains('croix') === true) {
+        setTimeout(() => {
+        alert("Vous avez setTimeout") 
+        }, 1000);
+    } 
+    else if (case7.classList.contains('croix') === true && case8.classList.contains('croix') === true && case9.classList.contains('croix') === true) {
+        setTimeout(() => {
+        alert("Vous avez gagné");
+        }, 1000);
+    } 
+    else if (case1.classList.contains('croix') === true && case5.classList.contains('croix') === true && case9.classList.contains('croix') === true) {
+        setTimeout(() => {
+        alert("Vous avez gagné");
+        }, 1000);
+    } 
+    else if (case3.classList.contains('croix') === true && case5.classList.contains('croix') === true && case7.classList.contains('croix') === true) {
+        setTimeout(() => {
+        alert("Vous avez gagné");
+        }, 1000);
     }
-
+   
     // rond
     else if (case1.classList.contains('rond') === true && case2.classList.contains('rond') === true && case3.classList.contains('rond') === true) {
-        alert("t'as gagné!")
-    } else if (case1.classList.contains('rond') === true && case4.classList.contains('rond') === true && case7.classList.contains('rond') === true) {
-        alert("t'as gagné!")
-    } else if (case2.classList.contains('rond') === true && case5.classList.contains('rond') === true && case8.classList.contains('rond') === true) {
-        alert("t'as gagné!")
-    } else if (case3.classList.contains('rond') === true && case6.classList.contains('rond') === true && case9.classList.contains('rond') === true) {
-        alert("t'as gagné!")
-    } else if (case4.classList.contains('rond') === true && case5.classList.contains('rond') === true && case6.classList.contains('rond') === true) {
-        alert("t'as gagné!")
-    } else if (case7.classList.contains('rond') === true && case8.classList.contains('rond') === true && case9.classList.contains('rond') === true) {
-        alert("t'as gagné!")
-    } else if (case1.classList.contains('rond') === true && case5.classList.contains('rond') === true && case9.classList.contains('rond') === true) {
-        alert("t'as gagné!")
-    } else if (case3.classList.contains('rond') === true && case5.classList.contains('rond') === true && case7.classList.contains('rond') === true) {
-        alert("t'as gagné!")
+        setTimeout(() => {
+        alert("Vous avez gagné");
+        }, 1000);
+    } 
+    else if (case1.classList.contains('rond') === true && case4.classList.contains('rond') === true && case7.classList.contains('rond') === true) {
+        setTimeout(() => {
+        alert("Vous avez gagné");
+        }, 1000);
+    } 
+    else if (case2.classList.contains('rond') === true && case5.classList.contains('rond') === true && case8.classList.contains('rond') === true) {
+        setTimeout(() => {
+        alert("Vous avez gagné");
+        }, 1000);
+    } 
+    else if (case3.classList.contains('rond') === true && case6.classList.contains('rond') === true && case9.classList.contains('rond') === true) {
+        setTimeout(() => {
+        alert("Vous avez gagné");
+        }, 1000);
+    } 
+    else if (case4.classList.contains('rond') === true && case5.classList.contains('rond') === true && case6.classList.contains('rond') === true) {
+        setTimeout(() => {
+        alert("Vous avez gagné");
+        }, 1000);
+    } 
+    else if (case7.classList.contains('rond') === true && case8.classList.contains('rond') === true && case9.classList.contains('rond') === true) {
+        setTimeout(() => {
+        alert("Vous avez gagné");
+        }, 1000);
+    } 
+    else if (case1.classList.contains('rond') === true && case5.classList.contains('rond') === true && case9.classList.contains('rond') === true) {
+        setTimeout(() => {
+        alert("Vous avez gagné");
+        }, 1000);
+    } 
+    
+    else if (case3.classList.contains('rond') === true && case5.classList.contains('rond') === true && case7.classList.contains('rond') === true) {
+        setTimeout(() => {
+        alert("Vous avez gagné");
+        }, 1000);
     }
+}
+function egalcheck(){
+    if(score === 9){
+        alert("Vous êtes égaliter")    
+    }    
+        
 }

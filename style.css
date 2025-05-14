@@ -21,13 +21,13 @@
 }
 
 .rond {
-    background-image: url("assets/rond.png");
+    background-image: url("asset/rond.png");
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .croix {
-    background-image: url("assets/croix.png");
+    background-image: url("asset/croix.png");
     background-repeat: no-repeat;
     background-position: center;
 }
